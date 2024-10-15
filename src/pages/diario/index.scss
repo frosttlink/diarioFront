@@ -1,0 +1,83 @@
+$amarelo-claro: #fff898;
+$amarelo-escuro: #ecc061;
+$cor-fundo: #fffde6;
+$cor-texto: #333;
+
+.pagina-adicionar-diario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: $cor-fundo;
+  padding: 20px;
+
+  h1 {
+    font-size: 2rem;
+    color: $cor-texto;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+
+    label {
+      font-size: 1rem;
+      color: $cor-texto;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid $amarelo-claro;
+      border-radius: 5px;
+      font-size: 1rem;
+      &:focus {
+        border-color: $amarelo-escuro;
+        outline: none;
+      }
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: $amarelo-escuro;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($amarelo-escuro, 10%);
+    }
+  }
+
+  a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: $amarelo-escuro;
+    font-size: 1rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

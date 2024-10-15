@@ -1,0 +1,73 @@
+$cor-principal: #ecc061; 
+$cor-fundo: #fffde6; 
+$amarelo-claro: #fff898; 
+$cor-texto: #333;
+$cor-hover: darken($cor-principal, 10%);
+
+.pagina-consulta-diario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: $cor-fundo;
+  padding: 20px;
+
+  h1 {
+    font-size: 2.5rem;
+    color: $cor-principal;
+    margin-bottom: 30px;
+  }
+
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: $cor-principal;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $cor-hover;
+    }
+  }
+
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+    th, td {
+      padding: 12px 20px;
+      text-align: left;
+      border: 1px solid $amarelo-claro;
+      color: $cor-texto;
+    }
+
+    th {
+      background-color: $cor-principal;
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    tr:nth-child(even) {
+      background-color: lighten($cor-fundo, 20%);
+    }
+
+    tr:hover {
+      background-color: $cor-hover;
+      color: white;
+    }
+
+    .alterar-link {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    
+     
+    }
+  }
+}
